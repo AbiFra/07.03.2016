@@ -1,0 +1,20 @@
+help("AirPassengers")
+AirPassengers
+data("AirPassengers")
+panam<- (AirPassengers)
+class(panam)
+start(panam);end(panam); frequency(panam)
+panam
+##ppp<- ts(base1,start = c(1998,1), frequency = 4) ## funcion para declarar una base de datos 
+## como series de tieompo
+layout(1:2)
+plot(panam, main= "Numero de pasajeros aereos, 19949-1960", xlab= "Años", ylab= "Pasajeros(miles)")
+plot(aggregate(panam)) ## linea de tendencia
+### para ver varias graficas a la vez layout (1:2)
+##ejercicio
+##1)generar una dara frame con la tasa de desocupacion que indica en el primer trimestre de 2005
+##tasa de desocupacion: 3.4 4.8 3.3 5.6 3.2 2.9 1.9 2.8 6.0 4.3 2.2 
+## 2)convertir en serie de tiempo y graficar st y la tendencia
+##***** punto extra librarla del segundo examen 
+### 3) obtener un pdf, jpj, tiff, png con las dos graficas en la misma imagen 
+### lo suben a github martes 8 de marzo antes de las 11:59 hrs
